@@ -9,3 +9,7 @@ type Event struct {
 	Location    string
 	Date        time.Time
 }
+var events []Event
+func (e Event) save(){
+ events = append(events, e)
+}
